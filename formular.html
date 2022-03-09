@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formular.css">
+</head>
+<body>
+    <h1>Formulär</h1>
+    <p>Här behöver du fylla nedanstående formuläret och skicka in ;</p>
+    <fieldset style="width: 462px;">
+        <legend>Vilken spel spelar du?</legend>
+        <input type="radio" name="Apex Legends" id="Apex Legends">
+        <label for="Apex Legends">Apex Legends</label><br>
+
+        <input type="radio" name="Counter-Strike: Global Offensive" id="CS:GO">
+        <label for="CS:GO">Counter-Strike: Global Offensive</label><br>
+        
+        <input type="radio" name="Rocket League" id="RL">
+        <label for="RL">Rocket League</label><br>
+        
+        <input type="radio" name="LostArk" id="LostArk">
+        <label for="RL">Lost Ark</label><br>
+    </fieldset>
+    <!--<input type="reset" value="Reset">--> 
+    <form>
+        <label for="platform"><b>Välj din platform:</b></label>
+        <select id="platform" name="platform" required>
+          <option value="PC">PC</option>
+          <option value="xbox">Xbox</option>
+          <option value="Playstation">Playstation</option>
+          <option value="Nintendo">Nintendo</option> <br>
+        </select>
+
+        </form>
+        <br>
+        <label for="story"><b>Vad tycker du om spelet du spelar:</b></label><br>
+
+        <textarea id="story" name="story"style="width: 485px; height: 186px;"></textarea>
+
+        <fieldset style="width: 462px;">
+            <legend><b>Skulle du rekommendera spelet för andra gamers?</b></legend>
+            <input type="radio" name="Ja" id="Ja">
+            <label for="Ja">Ja</label><br>
+    
+            <input type="radio" name="Nej" id="Nej">
+            <label for="Nej">Nej</label><br>
+        </fieldset>
+
+        <label for="feedback"><b>På vilket sätt tycker du spelet är dålig på?</b></label><br>
+        <textarea id="feedback" name="feedback"style="width: 485px; height: 186px;"></textarea><br><br>
+
+
+        <form action="/meddelandet/med.html">
+        <input type="submit" value="Skicka In">
+         </form>
+</body>
+</html>
